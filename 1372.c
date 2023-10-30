@@ -1,16 +1,16 @@
 #include <stdio.h>
 int main()
 {
-	int n,m,sign=0;
+	int n,m;
 	while(scanf("%d%d",&n,&m)==EOF)
 	{
-		int i;
+		int iï¼Œsign=0;
 		for(i=n;i<=m;i++)
 		{
-			int iu,it,ih;//units,ten,hundreds,signÓÃÓÚÅÐ¶ÏÊÇ·ñÊä³öno 
+			int iu,it,ih;//units,ten,hundreds,signç”¨äºŽåˆ¤æ–­æ˜¯å¦è¾“å‡ºno 
 			iu=i%10;
 			it=i/10%10;
-			ih=i/100;//ÒòÎª¹Ì¶¨ÈýÎ»ÊýËùÒÔ²»ÓÃ%
+			ih=i/100;//å› ä¸ºå›ºå®šä¸‰ä½æ•°æ‰€ä»¥ä¸ç”¨%
 			if(i==iu*iu*iu+it*it*it+ih*ih*ih)
 			{
 			if(sign==1)
@@ -21,6 +21,8 @@ int main()
 		}
 		if (sign==0)
 		printf("no\n");
+		else
+		printf(" ");
 	}
 	return 0;
 }
